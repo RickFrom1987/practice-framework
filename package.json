@@ -1,0 +1,25 @@
+{
+  "name": "practice-framework",
+  "version": "1.0.0",
+  "description": "Practice framework",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "assert": "1.4.1",
+    "gulp": "3.9.1",
+    "gulp-mocha": "^4.3.0"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RickFrom1987/practice-framework.git"
+  },
+  "author": "RickFrom1987",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RickFrom1987/practice-framework/issues"
+  },
+  "homepage": "https://github.com/RickFrom1987/practice-framework#readme"
+}
