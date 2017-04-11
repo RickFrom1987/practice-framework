@@ -5,6 +5,7 @@ class ProjectEuler {
     if(!p.solve) {
       throw new Error(`${problem} Solve not found.`)
     }
+    return p.solve();
   }
 }
 
