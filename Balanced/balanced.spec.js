@@ -4,9 +4,15 @@ const Balanced = require('./balanced');
 describe('Balanced', function() {
   describe('#solve()', function() {
     const b = new Balanced();
-    const results = b.solve();
-    it('balanced', function() {
-      assert(true);
+    it('([]) is balanced', function() {
+      const testString = '([])';
+      const test = b.solve(testString);
+      assert.equal(test,true);
+    });
+    it('([)] is not balanced', function() {
+      const testString = '([)]';
+      const test = b.solve(testString);
+      assert.equal(test, false);
     });
   });
 });
