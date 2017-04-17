@@ -10,16 +10,16 @@ four million, find the sum of the even-valued terms.
 
 */
 
-const fibonacci = function(n) {
+const fibonacciR = function(n) {
   if (n <= 0) {
     return 1;
   }
-  return fibonacci(n - 1) + fibonacci(n - 2);
+  return fibonacciR(n - 1) + fibonacciR(n - 2);
 }
 
 /*
 
-What does that means and why should we take care about that
+Why should we take care about that
 in our implementation? Basically, if we just store the value
 of each index in a hash, we will avoid the computational time
 of that value for the next N times.
@@ -37,12 +37,11 @@ const fibonacciMemo = function(n, m) {
 }
 
 
-
 module.exports = {
   // f(n) = f(n - 1) + f(n - 2)
   solve: function() {
-    const f = fibonacci(10);
-    return f;
+    const sum = fibonacciR(10);
+    return sum;
     // Find fib array of n
     // sum together all even values
   }

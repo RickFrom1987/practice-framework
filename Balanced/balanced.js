@@ -51,7 +51,6 @@ class Balanced {
     const testString = str || '';
     return isBalanced(str);
   }
-
 }
 
 module.exports = Balanced;
