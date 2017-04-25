@@ -1,5 +1,5 @@
 const assert = require('assert');
-const DataStructures = require('./dateStructures');
+const DataStructures = require('./dataStructures');
 
 describe('Data Structures', function() {
   const ds = new DataStructures();
